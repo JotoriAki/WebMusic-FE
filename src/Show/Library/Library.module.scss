@@ -1,0 +1,314 @@
+.library{
+    margin-top: 50px;
+    padding-bottom: 91px;
+    
+    .Playlist{
+        margin-top: 30px;
+        border-bottom: 1px solid #53535377;
+        padding-bottom: 30px;
+        svg{
+            margin-left: 5px;
+            color: rgb(99, 99, 99);
+        }
+        
+    }
+    
+}
+
+.item_Playlist{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    cursor: pointer;
+    .img-playlist{
+        height: 150px;
+        border-radius: 7px;
+    }
+    .card{
+        border: none;
+    }
+
+    &:hover{
+        .icon-play-Playlist {
+            opacity: 1;
+            color: aquamarine;
+        }
+    }
+
+}
+.icon{
+    .icon-item{
+        margin-right: 12px;
+    }
+}
+
+.icon-play-Playlist{
+    position: absolute;
+    font-size: 45px;
+    font-weight: 900;
+    opacity: 0;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 100px;
+    transition: all 0.2s;
+    z-index: 2;
+}
+// PropUp
+.Meta{
+    padding: none;
+    margin: none;
+}
+.Prop-CreatePlaylist{
+    position: fixed;
+    color: #fff;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 330px;
+    max-height: 300px;
+    background-color: rgb(23, 29, 119);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    z-index: 99;
+    h5{
+        font-weight: 700;
+    }
+}
+.Prop-shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.589);
+    z-index: 98;
+}
+input {
+    all: unset;
+}
+.Input-NamePlaylist{
+    margin-top: 10px;
+    text-align: left;
+    color: #ffffffb2;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border: 1px solid #646464;
+    width: 90%;
+    height: 30px;
+    border-radius: 8px;
+    padding: 0 5px;
+    &::placeholder {
+        color: #ffffffa8;
+    }
+    &:hover{
+        background-color: rgb(48, 56, 156);
+    }
+}
+.public-open{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    text-align: left;
+    p{
+        margin: 0;
+    }
+    span{
+        font-size: smaller;
+        color: #ffffffb2;
+    }
+}
+button{
+    all: unset;
+}
+.btn-CreatePlaylist{
+    margin-top: 20px;
+    width: 80%;
+    height: 30px;
+    border-radius: 7px;
+    background-color: blue;
+
+    &:hover{
+        background-color: rgba(0, 0, 255, 0.863);
+    }
+}
+
+
+// Thư Viện
+.btn-ListSong{
+    text-align: center;
+    border: 1px solid #272727b2;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 7px;
+    height: 25px;
+    width: 80px;
+    cursor: pointer;
+
+    &:hover{
+        border: rgba(0, 0, 255, 0.863) 1px solid;
+        color: rgba(0, 0, 255, 0.863);
+    }
+}
+.btn-ListSong-active{
+    background-color: rgba(0, 0, 255, 0.863);
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
+}
+.Choose-Type{
+    text-align: center;
+}
+.Title_Playlist{
+    margin-top: 10px;
+    border-bottom: 1px solid #53535377;
+    p{
+        font-weight: 700;
+        margin: 0;
+    }
+    .Duration{
+        text-align: right;
+   
+    }
+}
+.icon-More{
+    display: none;
+}
+.Item_Playlist{
+
+    border-bottom: 1px solid #53535325;
+    padding: 10px 10px;
+    .Duration{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .Col-img-song{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.9s;
+        position: relative;
+        .icon-play {
+            position: absolute;
+            font-size: 20px;
+            font-weight: 900;
+            opacity: 0;
+            color: wheat;
+            border: none;
+            border-radius: 100px;
+            transition: all 0.2s;
+            z-index: 2;
+        }
+        .img-song{
+            width: 40px;
+            height: 40px;
+            border-radius: 7px;
+            object-fit: cover; 
+            object-position: center;
+        }
+    }
+
+    &:hover{
+        background-color: #5353530e;
+
+        .icon-play {
+            opacity: 1;
+        }
+        .shadow {
+            box-shadow: inset 0 -50px 50px -50px rgba(0, 0, 0, 1);
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 7px;
+            z-index: 1;
+            opacity: 1;
+            animation: fadeIn 0.5s forwards;
+        }
+        .Duration{
+            p{
+                display: none;
+            }
+            .icon-More{
+                display: block;
+                cursor: pointer;
+   
+            }
+        }
+    }
+}
+
+.Option{
+    width: 180px;
+}
+.Item-Option{
+    height: 24px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #5353530e;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+/// Songedit
+.Background-Upload{
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 100px;
+    left: 150px;
+    border-radius: 10px;
+    width: 80%;
+    min-height: 400px;
+    padding: 20px;
+    text-align: center;
+    z-index: 15;
+    .img-demo{
+        margin-top: 30px;
+        height: 100px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+}
+.shadow-propup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.delete-song{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.upload-btn{
+    margin-top: 20px;
+}
+.upload-right{
+    div{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 1600px){
+    .song-edit{
+        left: auto;
+        top: 50px;
+    }
+}
+.icon{
+    margin-right: 5px;
+}

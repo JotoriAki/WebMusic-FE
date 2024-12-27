@@ -1,0 +1,39 @@
+
+.upload{
+    margin-top: 20px;
+    text-align: center;
+    min-height: 570px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    h3{
+        margin-bottom: 30px;
+    }
+    .upload-top{
+        margin-bottom: 50px;
+        .upload-right{
+            margin-left: 50px;
+        }
+        .input-name{
+            width: 100%;
+            margin: 0 auto 20px auto;
+        }
+    }
+
+    .upload-btn{
+        margin-top: 50px;
+    }
+
+}
+
+//Song Edit
+.img-demo{
+    margin-top: 10px;
+    border-radius: 10px;
+    // width: 70%;
+    height: 150px;
+    object-fit: cover;
+}

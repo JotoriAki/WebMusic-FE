@@ -1,0 +1,367 @@
+.BannerSong {
+  height: 380px;
+  width: 100%;
+  background: linear-gradient(to bottom right, #ff8c00, #1e90ff);
+  padding: 12px;
+}
+.Icon-Play {
+  svg {
+    font-size: 50px;
+    color: #0080ff;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+}
+.Title-Song {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: x-large;
+  margin-left: 40px;
+  font-weight: 600;
+  color: white;
+}
+.Banner-song-right {
+  display: flex;
+  justify-content: right;
+
+  .Img-song {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.option {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  .item-option {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 2px 5px;
+    display: inline;
+    border: 1px solid #22222225;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #0080ff49;
+    }
+  }
+  .item-view {
+    float: right;
+    margin-left: 10px;
+    padding: 2px 5px;
+    font-size: 17px;
+    display: inline;
+    svg {
+      color: #0080ff;
+    }
+  }
+  .item-tym {
+    float: right;
+    margin-left: 10px;
+    padding: 2px 5px;
+    font-size: 17px;
+    display: inline;
+  }
+  .item-option-right {
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 2px 5px;
+    display: inline;
+    border: 1px solid #22222225;
+  }
+}
+.space {
+  margin-top: 20px;
+  padding-top: 80px;
+  height: 200px;
+  margin-bottom: 30px;
+  color: aliceblue;
+
+  .avt-actor {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s;
+
+    &:hover {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+  }
+  .Name-actor {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+}
+.Types-Song {
+  span {
+    margin-left: 15px;
+    padding: 2px 5px;
+    border: 1px solid #0080ff;
+    color: #000000;
+    background-color: #0080ff49;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+}
+.Content-Song {
+  font-size: medium;
+  border: 2px solid #22222217;
+  background-color: #22222210;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  pre {
+    padding-left: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+.Option {
+  width: 180px;
+}
+.Item-Option {
+  height: 24px;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5353530e;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+//comment
+.Binh-luan {
+  margin-top: 20px;
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+.avt-comment {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Input-VietBL {
+  width: 100%;
+  border-bottom: 2px solid #22222241;
+  transition: border-bottom 0.5s ease-in-out;
+  margin-bottom: 5px;
+  &:focus {
+    border-bottom: 2px solid #222222;
+  }
+}
+.Button-Huy {
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  height: 30px;
+  width: 40px;
+  border-radius: 100px;
+  &:hover {
+    background-color: #22222233;
+  }
+}
+.Button-VietBL {
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: #0080ff;
+  color: white;
+  &:hover {
+    background-color: #006eff;
+  }
+}
+.Button-VietBL-disabled {
+  cursor: none;
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: rgba(197, 197, 197, 0.308);
+  color: #717171;
+}
+
+.content-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Time-Commnet {
+  margin-left: 10px;
+  color: #717171;
+}
+.item-comment {
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.Button-Rep {
+  text-align: center;
+  margin-left: 10px;
+  height: 30px;
+  width: 50px;
+  border-radius: 100px;
+  &:hover {
+    background-color: #22222233;
+  }
+}
+.Button-Result-Rep {
+  text-align: center;
+  margin-left: 10px;
+  height: 30px;
+  width: 100px;
+  border-radius: 100px;
+  &:hover {
+    background-color: #22222233;
+  }
+}
+
+//reply
+
+.avt-comment-reply {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Input-VietBL-reply {
+  width: 100%;
+  border-bottom: 2px solid #22222241;
+  transition: border-bottom 0.5s ease-in-out;
+  margin-bottom: 5px;
+  &:focus {
+    border-bottom: 2px solid #222222;
+  }
+}
+.Button-Huy-reply {
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  height: 30px;
+  width: 40px;
+  border-radius: 100px;
+  &:hover {
+    background-color: #22222233;
+  }
+}
+.Button-VietBL-reply {
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: #0080ff;
+  color: white;
+  &:hover {
+    background-color: #006eff;
+  }
+}
+.Button-VietBL-disabled-reply {
+  cursor: none;
+  float: right;
+  text-align: center;
+  margin-right: 10px;
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: rgba(197, 197, 197, 0.308);
+  color: #717171;
+}
+.item-comment-reply {
+  padding-top: 20px;
+}
+//song Same
+
+.Song-Same {
+  margin-top: 20px;
+  border-left: 1px solid #22222225;
+  height: 100vh;
+}
+.item-song-same {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  &:hover {
+    background-color: #22222225;
+    .Icon-Play-Same {
+      opacity: 1;
+    }
+  }
+}
+.img-song-same {
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  object-fit: cover;
+  object-position: center;
+}
+.Name-Song-Same {
+  margin-left: 30px;
+  font-weight: 600;
+}
+.item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.9s;
+  position: relative;
+}
+.Icon-Play-Same {
+  color: white;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 900;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 100px;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.link {
+  all: unset;
+  cursor: pointer;
+}
+
+.Delete {
+  float: right;
+  cursor: pointer;
+  margin-right: 50px;
+}
+.highlight-comment {
+  background-color: #0080ff49;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}

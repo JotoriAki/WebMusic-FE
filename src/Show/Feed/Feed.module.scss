@@ -1,0 +1,205 @@
+.Home {
+  margin-top: 50px;
+}
+.icon-more {
+  text-align: left;
+  font-size: 25px;
+  height: 100%;
+  i {
+    display: none;
+  }
+}
+.item {
+  margin-bottom: 50px;
+  height: 150px;
+  cursor: pointer;
+  .item_img {
+    height: 173px;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+    transition: all 0.1s;
+    padding: 2px;
+  }
+  &:hover {
+    .icon-more {
+      i {
+        display: block;
+        &:hover {
+          color: #1db954;
+        }
+      }
+    }
+  }
+}
+.Img {
+}
+.Type-song {
+  padding-top: 90px;
+  height: 120px;
+  span {
+    background-color: #007bff46;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #007bff;
+    margin-left: 10px;
+  }
+}
+.song-img {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  height: 100%;
+  border-radius: 7px;
+  overflow: hidden; // Giữ hình ảnh không bị tràn ra ngoài
+
+  img {
+    position: absolute; // Đảm bảo rằng ảnh phủ toàn bộ khung
+    top: 0;
+    left: 0;
+    width: 100%; // Đặt chiều rộng và chiều cao của ảnh 100% so với khung cha
+    height: 100%;
+    object-fit: cover; // Giữ tỷ lệ ảnh và cắt bỏ phần thừa
+    object-position: center; // Căn giữa ảnh
+    border-radius: inherit; // Kế thừa border-radius từ cha
+  }
+
+  .icon-play {
+    position: absolute;
+    font-size: 45px;
+    font-weight: 900;
+    opacity: 0;
+    top: 40%;
+    left: 40%;
+    color: #007bff;
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    transition: all 0.2s;
+    z-index: 2;
+  }
+
+  .icon-option {
+    color: aliceblue;
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  &:hover {
+    .icon-play {
+      opacity: 1;
+    }
+    .shadow {
+      box-shadow: inset 0 -50px 50px -50px rgba(0, 0, 0, 1);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+    .icon-option {
+      display: block;
+      z-index: 2;
+    }
+  }
+}
+
+.nameMusic {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 5px;
+}
+.author {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3333338a;
+}
+.like {
+  color: #ffffff8a;
+}
+.unlike {
+  color: red;
+}
+
+// Right
+.Phai {
+  margin-left: 50px;
+  border-left: #99999998 1px solid;
+  height: 80vh;
+  padding-bottom: 91px;
+}
+.More-Artists-Follow {
+  text-align: left;
+  margin-bottom: 10px;
+  h4 {
+    font-size: 16px;
+    color: #999;
+  }
+  .icon {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+}
+.title-SongHot {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Tilte {
+  margin-bottom: 30px;
+  h4 {
+    font-weight: 600;
+  }
+}
+.item-song-hot {
+  cursor: pointer;
+  margin-bottom: 10px;
+  img {
+    max-width: 100%;
+    height: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.Option {
+  width: 180px;
+}
+.Item-Option {
+  height: 24px;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5353530e;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

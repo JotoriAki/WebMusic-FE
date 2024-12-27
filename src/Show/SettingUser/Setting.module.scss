@@ -1,0 +1,102 @@
+.Setting {
+  margin-top: 30px;
+}
+.Tab-Option {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #0044ff;
+  background-color: #0044ff0e;
+  color: #0044ff;
+  font-size: 15px;
+  font-weight: 500;
+  height: 100%;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+  .title-setting {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .option-setting {
+    margin-bottom: 15px;
+    height: 30px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: #5353533f;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.178);
+      cursor: pointer;
+    }
+  }
+  .Active {
+    background-color: #0044ff;
+    color: #fff;
+    height: 30px;
+
+    &:hover {
+      background-color: #0044ff;
+      color: #fff;
+    }
+  }
+}
+
+.Tab-Setting {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #0044ff;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  height: 70vh;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+
+.doiten,
+.doitenunique,
+.suatheloai {
+  margin-top: 20px;
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0044ff;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  input[type='text'] {
+    width: 96%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .ant-select {
+    width: 100%;
+
+    .ant-select-selector {
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

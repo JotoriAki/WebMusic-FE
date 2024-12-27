@@ -1,0 +1,261 @@
+.Header {
+  display: fixed;
+  background-color: #333;
+  color: #ccc !important;
+  min-height: 46px;
+  padding: 0 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  a {
+    all: unset;
+  }
+}
+
+.Result-Search {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 50px;
+  max-height: 300px;
+  background-color: #fff;
+  z-index: 99;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+}
+
+.item-search {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 5px;
+  color: black;
+  height: 25px;
+  cursor: pointer;
+  &:hover {
+    background-color: #9494944f;
+  }
+}
+
+.Logo {
+  .Logo-img {
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.Search {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  input {
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #111111;
+  }
+  svg {
+    color: #111111;
+  }
+}
+
+.Result-Search-active {
+  opacity: 1;
+}
+
+.user {
+  .avt {
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    object-position: center;
+  }
+  svg {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+}
+.signin {
+  all: unset;
+  background: #333;
+  border: 1px solid #e5e5e562;
+  font-size: 15px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  &:hover {
+    border: 1px dashed #e5e5e5;
+  }
+}
+.signup {
+  all: unset;
+  color: white;
+  background: #ff5500;
+  border: 1px solid #e5e5e562;
+  font-size: 15px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  &:hover {
+    border: 1px dashed #e5e5e5;
+  }
+}
+.popupLogin {
+  cursor: auto;
+  position: absolute;
+  top: 10%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  z-index: 98;
+  width: 500px;
+  min-height: 300px;
+  background-color: #343a46;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: left;
+  animation: slideFromTop 0.2s ease-in-out forwards;
+}
+.popupRegister {
+  cursor: auto;
+  position: absolute;
+  top: 10%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 500px;
+  min-height: 300px;
+  background-color: #343a46;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: left;
+  animation: slideFromTop 0.2s ease-in-out forwards;
+}
+.dong-background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  z-index: 97;
+  cursor: auto;
+}
+.effmo {
+  backdrop-filter: blur(10px);
+}
+
+.bell {
+  font-size: 24px;
+  cursor: pointer;
+}
+.TB {
+  position: relative;
+  .number-TB {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    background-color: #0044ff;
+    color: white;
+    border-radius: 100px;
+    padding: 2px 5px;
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+  }
+}
+.Prop-TB {
+  max-height: 70vh;
+  padding-right: 8px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  &:hover {
+    overflow-y: scroll;
+    padding-right: 0px;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+.item-TB {
+  padding: 5px;
+  cursor: pointer;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  padding: 10px;
+
+  .avt-TB {
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .content-TB {
+    padding-left: 30px;
+
+    p {
+      color: #0044ff;
+      font-size: small;
+    }
+  }
+  .dot-seen {
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    background-color: #0044ff;
+  }
+  &:hover {
+    background-color: #9494944f;
+  }
+}
+
+@keyframes fadeAndScaleIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

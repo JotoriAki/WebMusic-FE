@@ -1,0 +1,241 @@
+.Profile {
+  padding: 30px;
+  background-color: transparent;
+  .Avt-User {
+    img {
+      height: 200px;
+      border-radius: 100px;
+    }
+  }
+  .NameUser {
+    padding-top: 20px;
+  }
+}
+.Bio {
+  span {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  hr {
+    margin: 5px 30px 30px 30px;
+  }
+  .Option {
+    margin-left: 50px;
+    cursor: pointer;
+
+    &:hover {
+      color: #0044ff;
+      border-bottom: 3px solid #0044ff;
+      padding-bottom: 6px;
+    }
+  }
+  .Option-Active {
+    color: #0044ff;
+    border-bottom: 3px solid #0044ff;
+    padding-bottom: 6px;
+  }
+  .ThongTin {
+    float: right;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+  }
+}
+.Avt-User {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+
+  .img-avt {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
+  &:hover {
+    .icon-fix {
+      opacity: 0.5;
+    }
+  }
+  .icon-fix {
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 100px;
+    transition: all 0.2s;
+    z-index: 2;
+  }
+}
+.Name-Song {
+  .title-song {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.icon-play {
+  display: none;
+}
+
+.Item_Playlist {
+  width: 100%;
+  border-bottom: 1px solid #53535325;
+  padding: 10px 10px;
+  .Duration {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    float: right;
+  }
+
+  .Col-img-song {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.9s;
+    position: relative;
+    .icon-play {
+      position: absolute;
+      font-size: 20px;
+      font-weight: 900;
+      opacity: 0;
+      color: wheat;
+      border: none;
+      border-radius: 100px;
+      transition: all 0.2s;
+      z-index: 2;
+    }
+    .img-song {
+      width: 100px;
+      height: 100px;
+      border-radius: 7px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &:hover {
+    background-color: #5353530e;
+
+    .Duration {
+      font-size: x-large;
+      p {
+        display: none;
+      }
+    }
+    .icon-play {
+      color: #0044ff;
+      display: block;
+    }
+  }
+}
+.types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  margin-right: 20px;
+  cursor: pointer;
+  color: #0044ff;
+
+  p {
+    border-radius: 10px;
+    border: 1px solid #0044ff;
+    background-color: #0044ff0e;
+    padding: 0 5px;
+  }
+}
+.interests {
+  border-radius: 10px;
+  border: 1px solid #0044ff;
+  background-color: #0044ff0e;
+  padding: 0 5px;
+  margin-right: 10px;
+}
+.Option {
+  width: 180px;
+}
+.Item-Option {
+  height: 24px;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5353530e;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+.icon {
+  margin-top: 30px;
+  .icon-item {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+}
+.item_Playlist {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  .img-playlist {
+    height: 150px;
+    border-radius: 7px;
+  }
+  .card {
+    border: none;
+  }
+
+  &:hover {
+    .icon-play-Playlist {
+      opacity: 1;
+      color: aquamarine;
+    }
+  }
+}
+.icon {
+  .icon-item {
+    margin-right: 12px;
+  }
+}
+
+.icon-play-Playlist {
+  position: absolute;
+  font-size: 45px;
+  font-weight: 900;
+  opacity: 0;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 100px;
+  transition: all 0.2s;
+  z-index: 2;
+}
+
+.setting {
+  font-size: large;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  color: black;
+
+  &:hover {
+    color: #0044ff;
+    font-size: x-large;
+  }
+}
+
+.follow {
+  float: right;
+  margin-right: 30px;
+  height: 29px;
+}

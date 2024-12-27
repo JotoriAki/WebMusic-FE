@@ -1,0 +1,45 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "embeddedLanguageFormatting": "auto",
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "jsxIndentProps": false,
+  "objectCurlySpacing": true,
+  "spaceBeforeFunctionParen": true,
+  "requirePragma": false,
+  "insertPragma": false,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 100
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "proseWrap": "always"
+      }
+    },
+    {
+      "files": "*.jsx",
+      "options": {
+        "tabWidth": 2,                  
+        "singleQuote": true,             
+        "jsxSingleQuote": true,          
+        "printWidth": 100                
+      }
+    }
+  ]
+}
